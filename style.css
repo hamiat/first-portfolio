@@ -1,0 +1,163 @@
+/* remove basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* variables */
+:root {
+    --primary: #8ba8a1;
+    --secondary: #fae3d9;
+}
+
+body {
+    background: #bbded6;
+    overflow-x: hidden;
+    font-family: 'Crimson Pro', serif;
+
+}
+
+li {
+    list-style: none;
+}
+
+
+/*fonts */
+
+h1 {
+    font-weight: 200;
+    font-size: 1.8em;
+    color: var(--primary);
+} 
+
+h2 {
+    color: var(--primary);
+    font-weight: 500;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+h3 {
+    color: var(--secondary);
+    font-weight: 400;
+    font-size: 1.1em;
+}
+
+p {
+    font-weight: 400; 
+    font-size: 1em;
+}
+
+/* mobile styles */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+.title {
+    grid-column: 3 / span 4;
+    grid-row: 1;
+}
+
+.contact-link {
+    grid-column: 4 / span 8;
+    grid-row: 2;
+    padding: 3em;
+    
+}
+
+.wrapper {
+   display: none;
+}
+
+
+h2 {
+    padding: 0.5em;
+    border: 3px solid var(--secondary);
+    border-radius: 20px;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    margin: 15px auto;
+}
+
+h2:hover {
+    background: var(--secondary);
+    color: #222;
+}
+
+.projects img {
+    width: 30%;
+    margin-top: 20px;
+    padding: 20px 20px 0 20px;
+    border: 3px solid var(--primary);
+    border-radius: 10px;
+}
+
+.projects {  
+    cursor: pointer;
+    display: none;
+    
+}
+
+.about p {
+    width: 80%;
+    padding: 20px;
+    display: none;
+    padding: 0.5em;
+    text-align: center;
+    margin: 15px auto;
+}
+
+
+input {
+    padding: 10px;
+    border: 2px solid var(--secondary);
+    border-radius: 20px;
+}
+
+textarea {
+    padding: 50px;
+    border: 2px solid var(--secondary);
+    border-radius: 20px;
+}
+
+#contact input, #contact textarea {
+    width: 100%;
+    margin: 10px 0;
+}
+
+#contact p {
+    margin-top: 50px;
+    font-size: 1.2em;
+}
+
+#contact form, #contact p {
+    width: 80%;
+    max-width: 400px;
+    margin: 15px auto;
+    text-align: center;
+    display: none;
+}
+
+.social ul {
+    display: flex;
+    padding: 20px;
+    margin-top: 1em;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social i {
+    cursor: pointer;
+}
+
+.social i:hover {
+    border: 2px solid #222;
+    border-radius: 20px;
+    background: var(--secondary);
+}
