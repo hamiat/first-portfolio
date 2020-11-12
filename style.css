@@ -13,7 +13,7 @@
 }
 
 body {
-    background: #bbded6;
+    background: #bbdec7d7;
     overflow-x: hidden;
     font-family: 'Crimson Pro', serif;
 
@@ -27,14 +27,14 @@ li {
 /*fonts */
 
 h1 {
-    font-weight: 200;
+    font-weight: 450;
     font-size: 1.8em;
     color: var(--primary);
 } 
 
 h2 {
     color: var(--primary);
-    font-weight: 500;
+    font-weight: 550;
     font-size: 1.2em;
     cursor: pointer;
 }
@@ -59,16 +59,18 @@ p {
 }
 
 .title {
-    grid-column: 3 / span 4;
+    grid-column: 3 / span 5;
     grid-row: 1;
+    color: #8ba8a1;
 }
 
-.contact-link {
+#shape {
     grid-column: 4 / span 8;
-    grid-row: 2;
-    padding: 3em;
+    grid-row: 3;
+    margin: 1em 0;
     
 }
+
 
 .wrapper {
    display: none;
@@ -82,7 +84,7 @@ h2 {
     width: 80%;
     max-width: 400px;
     text-align: center;
-    margin: 15px auto;
+    margin: 5px auto;
 }
 
 h2:hover {
@@ -90,27 +92,74 @@ h2:hover {
     color: #222;
 }
 
+.projects-paint {
+    background-color: #bbdec7d7;
+}
+
+.projects-heading {
+    background-image:  #bbdec7d7 ;
+    color: #222;
+    border-radius: none;
+    border: none;
+    border-bottom: 3px solid var(--primary);
+    margin: 0 auto;
+    
+
+}
+
 .projects img {
     width: 30%;
-    margin-top: 20px;
-    padding: 20px 20px 0 20px;
-    border: 3px solid var(--primary);
+    opacity: 0.7;
+    border: 2px solid var(--secondary);
     border-radius: 10px;
+    margin: auto 0.2em;
+
+}
+
+.projects img:hover {
+    opacity: 1;
 }
 
 .projects {  
     cursor: pointer;
+    display: none;;
+    height: 10em;
+    align-items: center;
+
+}
+
+
+.about-paint {
+    background-color: #ffbe88;
+    background-size: cover;
+    height: 100%;
+    justify-content: center;
+    margin: 0 auto;
+
+}
+
+.about-heading {
+    background-image:  #ffbe88 ;
+    color: #222;
+    border-radius: none;
+    border: none;
+    border-bottom: 3px solid var(--primary);
+    margin: 0 auto;
+
+}
+
+.about p {
+   
     display: none;
     
 }
 
-.about p {
-    width: 80%;
-    padding: 20px;
-    display: none;
-    padding: 0.5em;
+
+.about-me-text span {
+    width: 75%;
+    margin: 3em auto;
     text-align: center;
-    margin: 15px auto;
+
 }
 
 
@@ -126,15 +175,31 @@ textarea {
     border-radius: 20px;
 }
 
+.contact-paint {
+    background: #ffa488e3;
+    height: 10em auto;
+    justify-content: center;
+}
+
+.contact-heading {
+    background-image: #ffa488;
+    color: #222;
+    border-radius: none;
+    border: none;
+    border-bottom: 3px solid var(--primary);
+    margin: 0 auto;
+
+}
+
+.test span {
+    width: 75%;
+}
+
 #contact input, #contact textarea {
     width: 100%;
     margin: 10px 0;
 }
 
-#contact p {
-    margin-top: 50px;
-    font-size: 1.2em;
-}
 
 #contact form, #contact p {
     width: 80%;
@@ -142,7 +207,9 @@ textarea {
     margin: 15px auto;
     text-align: center;
     display: none;
+
 }
+
 
 .social ul {
     display: flex;
@@ -159,5 +226,5 @@ textarea {
 .social i:hover {
     border: 2px solid #222;
     border-radius: 20px;
-    background: var(--secondary);
+    background: var(--primary);
 }
