@@ -8,7 +8,7 @@
 
 /* variables */
 :root {
-    --primary: #8ba8a1;
+    --primary: #7b948e;
     --secondary: #fae3d9;
 }
 
@@ -22,6 +22,7 @@ body {
 li {
     list-style: none;
 }
+
 
 
 /*fonts */
@@ -51,6 +52,9 @@ p {
 }
 
 /* mobile styles */
+nav ul {
+    display: none;
+}
 .grid {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
@@ -67,7 +71,7 @@ p {
 #shape {
     grid-column: 4 / span 8;
     grid-row: 3;
-    margin: 1em 0;
+    margin: 2em 0;
     
 }
 
@@ -79,7 +83,7 @@ p {
 
 h2 {
     padding: 0.5em;
-    border: 3px solid var(--secondary);
+    border: 2px solid #7b948e;
     border-radius: 20px;
     width: 80%;
     max-width: 400px;
@@ -109,23 +113,30 @@ h2:hover {
 
 .projects img {
     width: 30%;
-    opacity: 0.7;
+  /*   opacity: 0.7; */
     border: 2px solid var(--secondary);
     border-radius: 10px;
     margin: auto 0.2em;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    transition: box-shadow 0.3s ease-in-out;
 
 }
 
 .projects img:hover {
-    opacity: 1;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transform: scale(1.2, 1.2);
+    
 }
+
+.projects img:hover::after {
+    opacity: 1;
+  }
 
 .projects {  
     cursor: pointer;
     display: none;;
     height: 10em;
     align-items: center;
-
 }
 
 
@@ -148,7 +159,7 @@ h2:hover {
 
 }
 
-.about p {
+#about p {
    
     display: none;
     
@@ -191,9 +202,7 @@ textarea {
 
 }
 
-.test span {
-    width: 75%;
-}
+
 
 #contact input, #contact textarea {
     width: 100%;
@@ -227,4 +236,105 @@ textarea {
     border: 2px solid #222;
     border-radius: 20px;
     background: var(--primary);
+}
+
+/* desktop style */
+@media screen and (min-width: 1200px) {
+    body {
+        font-size: 20px;
+        scroll-behavior: smooth;
+
+    }
+    
+
+    h2 {
+        box-shadow: 1px 2px 3px black;
+        border-radius: 20px;
+        border: #50615d;
+        color: #50615d;
+    }
+
+    h2:hover {
+        background: none;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 50px;
+        gap: 10px;
+    }
+
+    a {
+        border-bottom: 2px solid var(--secondary);
+        font-size: 25px;
+        color: var(--primary);
+    }
+
+    a:hover {
+        border-bottom: 2px solid var(--primary);
+    }
+
+
+    section {
+        padding: 90px 0;
+    }
+    
+    #shape {
+        margin-top: -80px;
+    }
+
+    .landing-page {
+        width: 100%;
+        margin: 0px 100px 0 100px;
+        height: 550px;
+    }
+    
+
+    #project {
+        background-color: #bbdec7d7;
+
+    }
+
+    #project .projects {
+        width: 85%;
+        margin: 100px 100px 100px ;
+        display: inline-block;
+    }
+
+    .projects a {
+        border: none;
+        margin: 0 10px;
+    }
+
+    #about p {
+        display: block;
+        width: 75%;
+        margin: 3em auto;
+        text-align: center;
+        line-height: 1.5em;
+    }
+
+    #about {
+        background-color: #ffbe88;
+        height: 500px;
+    }
+
+    #contact {
+        background-color: #ffa488;
+        padding-bottom: 0;
+    }
+    #contact form, #contact p {
+        display: block;
+        width: 80%;
+        max-width: 400px;
+        margin: 15px auto ;
+        text-align: center;  
+          
+
+
+    }
+    
+
+
 }
