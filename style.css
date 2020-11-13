@@ -8,7 +8,7 @@
 
 /* variables */
 :root {
-    --primary: #7b948e;
+    --primary: #647470;
     --secondary: #fae3d9;
 }
 
@@ -28,7 +28,7 @@ li {
 /*fonts */
 
 h1 {
-    font-weight: 500;
+    font-weight: 450;
     font-size: 1.8em;
     color: var(--primary);
 } 
@@ -112,6 +112,11 @@ h2:hover {
 
 }
 
+.projects-heading:hover {
+    background: none;
+    cursor: default;
+}
+
 .projects img {
     width: 30%;
   /*   opacity: 0.7; */
@@ -160,6 +165,12 @@ h2:hover {
 
 }
 
+.about-heading:hover {
+    background: none;
+    cursor: default;
+}
+
+
 #about p {
    
     display: none;
@@ -204,6 +215,12 @@ textarea {
 
 }
 
+.contact-heading:hover {
+    background: none;
+    cursor: default;
+}
+
+
 
 
 #contact input, #contact textarea {
@@ -247,13 +264,17 @@ textarea {
         scroll-behavior: smooth;
 
     }
+
+    .title {
+        color: var(--primary)
+    }
     
 
     h2 {
         box-shadow: 1px 2px 3px black;
         border-radius: 20px;
-        border: #50615d;
-        color: #50615d;
+        border: var(--primary);
+        color: var(--primary);
         cursor: default;
     }
 
@@ -339,7 +360,7 @@ textarea {
         display: block;
         width: 80%;
         max-width: 400px;
-        margin: 15px auto ;
+        margin: 20px auto ;
         text-align: center;  
           
 
