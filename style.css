@@ -28,14 +28,14 @@ li {
 /*fonts */
 
 h1 {
-    font-weight: 450;
+    font-weight: 500;
     font-size: 1.8em;
     color: var(--primary);
 } 
 
 h2 {
     color: var(--primary);
-    font-weight: 550;
+    font-weight: 450;
     font-size: 1.2em;
     cursor: pointer;
 }
@@ -89,6 +89,7 @@ h2 {
     max-width: 400px;
     text-align: center;
     margin: 5px auto;
+    font-family: monospace;
 }
 
 h2:hover {
@@ -170,6 +171,7 @@ h2:hover {
     width: 75%;
     margin: 3em auto;
     text-align: center;
+    line-height: 1.2em;
 
 }
 
@@ -235,7 +237,7 @@ textarea {
 .social i:hover {
     border: 2px solid #222;
     border-radius: 20px;
-    background: var(--primary);
+    background: var(--secondary);
 }
 
 /* desktop style */
@@ -252,6 +254,7 @@ textarea {
         border-radius: 20px;
         border: #50615d;
         color: #50615d;
+        cursor: default;
     }
 
     h2:hover {
@@ -260,15 +263,22 @@ textarea {
 
     nav ul {
         display: flex;
-        justify-content: flex-end;
-        margin-right: 50px;
+        justify-content: flex-end; 
+        margin-right: 40px;
+        margin-top: 10px;
         gap: 10px;
+
+        
     }
 
     a {
         border-bottom: 2px solid var(--secondary);
         font-size: 25px;
         color: var(--primary);
+        font-family: monospace;
+        
+        
+        
     }
 
     a:hover {
@@ -278,6 +288,7 @@ textarea {
 
     section {
         padding: 90px 0;
+
     }
     
     #shape {
@@ -310,7 +321,7 @@ textarea {
     #about p {
         display: block;
         width: 75%;
-        margin: 3em auto;
+        margin: 2em auto 3em;
         text-align: center;
         line-height: 1.5em;
     }
@@ -334,6 +345,8 @@ textarea {
 
 
     }
+
+   
     
 
 
